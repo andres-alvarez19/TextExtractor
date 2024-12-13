@@ -1,4 +1,12 @@
 import PyPDF2
+import re
+
+def clean_text(text):
+    text = re.sub(r'https?://\\S+|www\\.\\S+', '', text)
+    text = re.sub(r'[^a-za A-Z0-9 .,\\n]', '', text)
+    text = re.sub(r'\\n+', ' ', text)
+    text = re.sub(r'\\s+', ' ', text).strip()
+    return text
 
 def extract_text_from_pdf(pdf_path):
     text_blocks = []
@@ -7,6 +15,7 @@ def extract_text_from_pdf(pdf_path):
         for page in reader.pages:
             text = page.extract_text()
             if text:
+                text = clean_text(text)
                 blocks = [text[i:i+500] for i in range(0, len(text), 500)]
                 text_blocks.extend(blocks)
     return text_blocks
