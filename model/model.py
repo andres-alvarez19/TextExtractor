@@ -1,6 +1,6 @@
 from transformers import pipeline
-from retrieval import find_relevant_block
-from extractor import extract_questions
+from .retrieval import find_relevant_block
+from .extractor import extract_questions
 
 def ask_flan_t5(question, context):
     qa_pipeline = pipeline("text2text-generation", model="google/flan-t5-base")
