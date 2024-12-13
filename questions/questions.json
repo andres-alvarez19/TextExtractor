@@ -1,0 +1,76 @@
+{
+  "questions": [
+    {
+      "animal_name": "¿Cuál es el nombre del animal o grupo de animales (por ejemplo, \"vacas\")?"
+    },
+    {
+      "number_of_animals": "¿Cuántos animales hay en este grupo?"
+    },
+    {
+      "animal_diet": "¿Cuál es la dieta de los animales (por ejemplo, \"forraje, concentrado, etc.\")?"
+    },
+    {
+      "antibiotic_use": "¿Se ha utilizado antibióticos en este grupo de animales? (1 para sí, 0 para no)."
+    },
+    {
+      "animal_type": "¿Qué tipo de animal es (por ejemplo, \"bovino\", \"porcino\")?"
+    },
+    {
+      "average_weight": "¿Cuál es el peso promedio de los animales en kilogramos?"
+    },
+    {
+      "average_age": "¿Cuál es la edad promedio de los animales en meses?"
+    },
+    {
+      "sample_ph": "¿Cuál es el pH de la muestra?"
+    },
+    {
+      "sample_temperature": "¿Cuál era la temperatura de la muestra en el momento de la recolección (en °C)?"
+    },
+    {
+      "sample_humidity": "¿Cuál era la humedad relativa de la muestra en el momento de la recolección (en %)?"
+    },
+    {
+      "organic_matter_concentration": "¿Cuál es la concentración de materia orgánica de la muestra (en porcentaje)?"
+    },
+    {
+      "microbial_load": "¿Cuál es la carga microbiana de la muestra (en unidades por mililitro)?"
+    },
+    {
+      "microbial_diversity": "¿Cuál es la diversidad microbiana medida en la muestra?"
+    },
+    {
+      "antibiotic_name": "¿Cuál es el nombre del antibiótico utilizado?"
+    },
+    {
+      "treatment_days": "¿Cuántos días duró el tratamiento con antibióticos?"
+    },
+    {
+      "average_amount_per_animal": "¿Cuál fue la cantidad promedio de antibiótico administrada por animal (en mg/kg)?"
+    },
+    {
+      "antibiotic_frequency": "¿Con qué frecuencia se administró el antibiótico (por ejemplo, \"diaria\", \"semanal\")?"
+    },
+    {
+      "geographic_location": "¿Dónde está ubicada la granja (por ejemplo, \"Temuco, Chile\")?"
+    },
+    {
+      "ambient_temperature": "¿Cuál es la temperatura ambiente promedio en la granja (en °C)?"
+    },
+    {
+      "relative_humidity": "¿Cuál es la humedad relativa promedio en la granja (en %)?"
+    },
+    {
+      "farm_size": "¿Cuál es el tamaño de la granja (en hectáreas)?"
+    },
+    {
+      "gene_name": "¿Cuál es el nombre del gen identificado en la muestra?"
+    },
+    {
+      "gene_concentration": "¿Cuál es la concentración del gen identificado? (ng)"
+    },
+    {
+      "resistance_percentage": "¿Cuál es el porcentaje de resistencia observado?"
+    }
+  ]
+}
