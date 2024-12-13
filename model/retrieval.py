@@ -6,4 +6,7 @@ def find_relevant_block(question, text_blocks):
     block_embeddings = model.encode(text_blocks, convert_to_tensor=True)
     similarities = util.cos_sim(question_embedding, block_embeddings)
     most_relevant_index = similarities.argmax().item()
+    threshold = 0.5
+    if similarities[most_relevant_index] < threshold:
+        return "No se encontró información relevante."
     return text_blocks[most_relevant_index]
